@@ -1,3 +1,3 @@
-class HeroShowSerializer < ActiveModel::Serializer
-  attributes :id
+class HeroShowSerializer < HeroSerializer
+  has_many :powers
 end
