@@ -72,6 +72,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
     builder (3.2.4)
+    byebug (11.1.3)
     case_transform (0.2)
       activesupport
     concurrent-ruby (1.1.10)
@@ -158,6 +159,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  byebug
   debug
   puma (~> 5.0)
   rails (~> 7.0.4)
