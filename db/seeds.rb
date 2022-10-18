@@ -27,8 +27,6 @@ powers = Power.create([{name: "Flight", description: "Ability to fly"},
 
 HeroPower.create(strength: "Average", hero: heroes.second, power: powers.third)
 HeroPower.create(strength: "Strong", hero: heroes.first, power: powers.third)
-HeroPower.create(strength: "Strong", hero: heroes.first, power: powers.first)
-HeroPower.create(strength: "Weak", hero: heroes.third, power: powers.first)
 HeroPower.create(strength: "Strong", hero: heroes.third, power: powers.second)
 HeroPower.create(strength: "Average", hero: heroes.third, power: powers.fourth)
 HeroPower.create(strength: "Weak", hero: heroes.second, power: powers.fifth)

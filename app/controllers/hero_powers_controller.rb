@@ -1,6 +1,5 @@
 class HeroPowersController < ApplicationController
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_error
-    wrap_parameters format: []
     def create
         hero_power = HeroPower.create!(post_params)
         render json: hero_power, include: '**', status: :created #** multiple levels
