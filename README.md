@@ -49,7 +49,15 @@ http://localhost:3000
     Content-Type: application/json
     Content-Length: 8
 
-    []
+    [  
+
+        { "id": 1, "name": "Kamala Khan", "super_name": "Ms. Marvel" },  
+
+        { "id": 2, "name": "Doreen Green", "super_name": "Squirrel Girl" },  
+
+        { "id": 3, "name": "Gwen Stacy", "super_name": "Spider-Gwen" }
+
+    ]
 
 ## Get list of Powers
 
@@ -68,8 +76,18 @@ http://localhost:3000
     Content-Type: application/json
     Content-Length: 8
 
-    []
-
+    [
+        {
+            "id": 1,
+            "name": "super strength",
+            "description": "gives the wielder super-human strengths"
+        },
+        {
+            "id": 1,
+            "name": "flight",
+            "description": "gives the wielder the ability to fly through the skies at supersonic speed"
+        }
+    ]
 ## Get a specific hero
 
 ### Request
@@ -87,7 +105,23 @@ http://localhost:3000
     Content-Type: application/json
     Content-Length: 141
 
-    {}
+    {
+        "id": 1,
+        "name": "Kamala Khan",
+        "super_name": "Ms. Marvel",
+        "powers": [
+            {
+            "id": 1,
+            "name": "super strength",
+            "description": "gives the wielder super-human strengths"
+            },
+            {
+            "id": 2,
+            "name": "flight",
+            "description": "gives the wielder the ability to fly through the skies at supersonic speed"
+            }
+        ]
+    }
 
 ## Get a non-existent hero
 
@@ -125,7 +159,11 @@ http://localhost:3000
     Content-Type: application/json
     Content-Length: 141
 
-    {}
+    {
+        "id": 1,
+        "name": "super strength",
+        "description": "gives the wielder super-human strengths"
+    }
 
 ## Get a non-existent power
 
